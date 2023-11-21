@@ -1,0 +1,12 @@
+{
+"produtos": [
+        {
+            "img": "../../assets/arroz.webp",
+            "nome": "Arroz Branco",
+            "valor": 20,
+            "descricao": "Arroz branco de qualidade",
+            "id": 1
+            
+        }
+    ]
+}

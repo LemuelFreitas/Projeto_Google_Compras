@@ -1,13 +1,14 @@
 <div class="container d-flex justify-content-between">
-<div class="card" style="width: 18rem;">
-    <img src="../../assets/arroz.webp" class="card-img-top" alt="...">
+<div class="card" style="width: 18rem;" *ngFor="let p of produtos">
+    <img src="{{p.img}}" class="card-img-top" alt="...">
     <div class="card-body d-flex justify-content-between flex-column">
-      <h5 class="card-title">Arroz</h5>
-      <p class="card-text">Arroz Branco</p>
+      <h5 class="card-title">{{p.nome}}</h5>
+      <h5 class="card-title">{{p.valor |currency : 'BRL'}}</h5>
+      <p class="card-text">{{p.descricao}}</p>
       <a href="#" class="btn btn-primary" (click)="Comprar()">Comprar</a>
     </div>
   </div>
-
+<!-- 
   <div class="card" style="width: 18rem;">
     <img src="../../assets/oleo de soja.jfif" class="card-img-top" alt="...">
     <div class="card-body d-flex justify-content-between flex-column">
@@ -33,7 +34,7 @@
       <p class="card-text">Macarrão</p>
       <a href="#" class="btn btn-primary" (click)="Comprar()">Comprar</a>
     </div>
-  </div>
+  </div> -->
 
 
 </div>
